@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Birla Capital - Udyog Plus Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="onboarding-active">
+
+  <header class="custom-header">
+    <img src="img/Header (1).png" alt="Header" class="header-image">
+  </header>
+
+  <!-- Spotlight Overlay for Initial Screen View -->
+  <div class="spotlight-overlay" id="spotlightOverlay"></div>
+
+  <!-- Top Navigation Header -->
+  <header class="main-header">
+    <div class="header-left">
+      <div class="brand-logo">
+        <span class="logo-title">Udyog <span class="highlight">Plus</span></span>
+        <div class="sub-logo">
+          <i class="fa-solid fa-shapes"></i>
+          <span>ADITYA BIRLA CAPITAL</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-right">
+      <div class="dashboard-toggle">
+        <button class="toggle-btn active" id="personalBtn">Personal Dashboard</button>
+        <button class="toggle-btn" id="businessBtn">Business Dashboard</button>
+      </div>
+      <div class="user-profile">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200" alt="User Avatar" class="avatar">
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Dashboard Container -->
+  <div class="dashboard-container">
+
+    <!-- Left Sidebar Section -->
+    <aside class="sidebar">
+      <div class="last-login">
+        <span>Last Login 2:00Am</span>
+      </div>
+
+      <nav class="sidebar-menu">
+        <ul>
+
+          <!-- Loans -->
+          <li class="menu-item">
+            <div class="icon-flipper">
+              <div class="icon-face front">
+                <i class="fa-solid fa-sack-dollar"></i>
+              </div>
+              <div class="icon-face back">
+                <i class="fa-solid fa-sack-dollar"></i>
+              </div>
+            </div>
+            <span class="menu-text">Loans</span>
+            <span class="badge">1</span>
+          </li>
+
+          <!-- Insurance -->
+          <li class="menu-item">
+            <div class="icon-flipper">
+              <div class="icon-face front">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="icon-face back">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+            </div>
+            <span class="menu-text">Insurance</span>
+          </li>
+
+          <!-- Investments -->
+          <li class="menu-item">
+            <div class="icon-flipper">
+              <div class="icon-face front">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <div class="icon-face back">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+            </div>
+            <span class="menu-text">Investments</span>
+            <span class="badge">2</span>
+          </li>
+
+          <!-- VAS -->
+          <li class="menu-item">
+            <div class="icon-flipper">
+              <div class="icon-face front">
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </div>
+              <div class="icon-face back">
+                <i class="fa-solid fa-boxes-stacked"></i>
+              </div>
+            </div>
+            <span class="menu-text">VAS</span>
+          </li>
+
+          <!-- Servicing -->
+          <li class="menu-item">
+            <div class="icon-flipper">
+              <div class="icon-face front">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+              <div class="icon-face back">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+            </div>
+            <span class="menu-text">Servicing</span>
+          </li>
+
+          <!-- Need Help? -->
+          <li class="menu-item">
+            <div class="icon-flipper">
+              <div class="icon-face front">
+                <i class="fa-solid fa-circle-question"></i>
+              </div>
+              <div class="icon-face back">
+                <i class="fa-solid fa-circle-question"></i>
+              </div>
+            </div>
+            <span class="menu-text">Need Help?</span>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Sidebar Promo Card -->
+      <div class="credit-score-card">
+        <div class="credit-score-content">
+          <h3>Check your Credit Score on the go</h3>
+          <a href="#" class="check-now-btn">Check now &rarr;</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Center Main Content -->
+    <main class="main-content">
+
+      <!-- Recommended Section -->
+      <section class="recommended-section spotlight-focus" id="recommendedSection">
+        
+        <!-- Onboarding Pointer Arrow & Text -->
+        <div class="onboarding-pointer" id="onboardingPointer">
+          <svg class="pointer-arrow" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M12 5l-7 7M12 5l7 7"/>
+          </svg>
+          <span class="pointer-text">Proceed with your application here</span>
+        </div>
+
+        <h2 class="section-title">Recommended for You</h2>
+        <div class="recommended-cards">
+          
+          <div class="rec-card">
+            <div class="rec-img-wrapper">
+              <img src="img/3 (3).png" alt="Personal Loan">
+            </div>
+            <div class="rec-info">
+              <h3>Personal Loan</h3>
+              <a href="#" class="apply-link">Apply Now &rarr;</a>
+            </div>
+          </div>
+
+          <div class="rec-card">
+            <div class="rec-img-wrapper">
+              <img src="img/Group 6 (1).png" alt="Term Insurance">
+            </div>
+            <div class="rec-info">
+              <h3>Term Insurance</h3>
+              <a href="#" class="apply-link">Apply Now &rarr;</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Explore Products Grid -->
+      <section class="explore-products-section">
+        <h3 class="section-title-2">Explore our Top products</h3>
+        
+        <div class="product-grid">
+          
+          <div class="product-card">
+            <span class="tag">BUSINESS</span>
+            <h3>SCF</h3>
+            <p class="subtitle">Up to 1.5 Cr</p>
+          </div>
+
+          <div class="product-card">
+            <span class="tag">LOAN</span>
+            <h3>SEPL</h3>
+            <p class="subtitle">From 10.5% p.a.</p>
+          </div>
+
+          <div class="product-card">
+            <span class="tag">B2B</span>
+            <h3>AI for Business</h3>
+            <p class="subtitle">Automation</p>
+          </div>
+
+          <div class="product-card">
+            <span class="tag">RETAIL</span>
+            <h3>Gold Loan</h3>
+            <p class="subtitle">From 8.9% p.a.</p>
+          </div>
+
+          <div class="product-card">
+            <span class="tag">PROTECT</span>
+            <h3>Insurance</h3>
+            <p class="subtitle">Life & Health</p>
+          </div>
+
+          <div class="product-card">
+            <span class="tag">WEALTH</span>
+            <h3>Investment</h3>
+            <p class="subtitle">Mutual Funds</p>
+          </div>
+
+          <div class="product-card">
+            <span class="tag">BUSINESS</span>
+            <h3>Business Loan</h3>
+            <p class="subtitle">Up to 50 Lakhs</p>
+          </div>
+
+          <div class="product-card">
+            <span class="tag">WEALTH</span>
+            <h3>Fixed Deposit</h3>
+            <p class="subtitle">Up to 8.5% p.a.</p>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Right Sidebar Section -->
+    <aside class="right-sidebar">
+
+      <!-- Profile Completion Section -->
+      <section class="profile-completion-box">
+        <div class="premium-badge">
+          <div class="star-animation-wrapper">
+            <div class="outer-ring"></div>
+            <div class="inner-star">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="sparkle s1"></span>
+            <span class="sparkle s2"></span>
+            <span class="sparkle s3"></span>
+            <span class="sparkle s4"></span>
+          </div>
+          <span class="badge-label">PREMIUM</span>
+        </div>
+        <h3 class="box-title">Profile Completion</h3>
+
+        <div class="completion-list">
+          
+          <div class="completion-item" data-target="33.33">
+            <div class="item-header">
+              <span class="item-label">Basic Profile</span>
+              <span class="item-value counter-text">33.33%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 33.33%;"></div>
+            </div>
+          </div>
+
+          <div class="completion-item" data-target="66.67">
+            <div class="item-header">
+              <span class="item-label">Self Profile</span>
+              <span class="item-value counter-text">66.67%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 66.67%;"></div>
+            </div>
+          </div>
+
+          <div class="completion-item" data-target="100">
+            <div class="item-header">
+              <span class="item-label">Business Profile</span>
+              <span class="item-value counter-text">100%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 100%;"></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- My Offers Carousel Slider -->
+      <section class="my-offers-box">
+        <div class="offers-carousel" id="offersCarousel">
+          <div class="carousel-track">
+            
+            <div class="offer-slide active">
+              <h3>My Offers</h3>
+              <p class="offer-subtitle">Low interest rates, High value<br>Aditya Birla Capital Gold Loan</p>
+              <div class="offer-image-wrapper">
+                <img src="img/fd98981cf8fbb4cc15957ed7d3cdd96be94bc88a.jpg" alt="Gold Loan Family Offer">
+                <button class="slide-apply-btn">Apply Now</button>
+              </div>
+            </div>
+
+            <div class="offer-slide">
+              <h3>Special Loan Offer</h3>
+              <p class="offer-subtitle">Instant Disbursal, Zero Paperwork<br>Personal Pre-approved Limit</p>
+              <div class="offer-image-wrapper">
+                <img src="img/fd98981cf8fbb4cc15957ed7d3cdd96be94bc88a.jpg" alt="Instant Loan Offer">
+                <button class="slide-apply-btn">Apply Now</button>
+              </div>
+            </div>
+
+            <div class="offer-slide">
+              <h3>Business Growth</h3>
+              <p class="offer-subtitle">Expand your enterprise today<br>Collateral Free Business Credit</p>
+              <div class="offer-image-wrapper">
+                <img src="img/fd98981cf8fbb4cc15957ed7d3cdd96be94bc88a.jpg" alt="Business Growth Offer">
+                <button class="slide-apply-btn">Apply Now</button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="carousel-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+        </div>
+      </section>
+
+    </aside>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="custom-footer">
+    <img src="img/Footer.png" alt="Footer" class="footer-image">
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

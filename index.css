@@ -966,7 +966,7 @@ body:not(.onboarding-active) .recommended-section.spotlight-focus {
 }
 offer-image-wrapper img {
     width: 100%;
-    height: 540px;
+    height: 540px!important;
     object-fit: cover;
     border-radius: 30px;
 }

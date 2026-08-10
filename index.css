@@ -964,7 +964,12 @@ body:not(.onboarding-active) .recommended-section.spotlight-focus {
   width: 220px;
   transition: transform 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
-
+offer-image-wrapper img {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 30px;
+}
 .dashboard-container {
   display: grid;
   grid-template-columns: 240px 1fr 289px;

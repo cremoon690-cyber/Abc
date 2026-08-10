@@ -970,6 +970,7 @@ offer-image-wrapper img {
     object-fit: cover;
     border-radius: 30px;
 }
+   
 .dashboard-container {
   display: grid;
   grid-template-columns: 240px 1fr 289px;

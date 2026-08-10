@@ -1038,3 +1038,19 @@ offer-image-wrapper img {
         transform: scale(1.15);
     }
 }
+@media (min-width: 1500px) {
+  .offer-image-wrapper {
+    height: 540px !important;
+    min-height: 540px !important;
+    max-height: 540px !important;
+    aspect-ratio: auto !important;
+  }
+
+  .offer-image-wrapper img {
+    width: 100% !important;
+    height: 540px !important;
+    min-height: 540px !important;
+    max-height: 540px !important;
+    object-fit: cover !important;
+  }
+}

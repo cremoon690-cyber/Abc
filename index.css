@@ -939,6 +939,12 @@ body:not(.onboarding-active) .recommended-section.spotlight-focus {
   gap: 16px;
 }
 
+   .menu-item {
+  display: flex;
+  align-items: center;
+  padding: 16px 16px;
+  border-radius: 12px;}
+
 .product-card {
   /* background-color: #1e1f22; */
 
